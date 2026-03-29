@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SubChain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>SubChain</h2>
+  <button class="connect-btn" onclick="connectWallet()">Connect Wallet</button>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>
+    Smart <span>subscriptions</span><br>
+    powered by <span class="accent">blockchain</span>
+  </h1>
+
+  <p class="hero-desc">
+    Automate and manage your digital subscriptions securely using blockchain.
+    No middlemen. No hidden charges. Full transparency.
+  </p>
+
+  <p class="hero-sub">
+    Built for developers, freelancers, and Web3 users who want full control over recurring payments.
+  </p>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div>⚡ Instant blockchain payments</div>
+    <div>🔒 Secure & transparent</div>
+    <div>📊 Track subscriptions easily</div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="card">100%<br><span>On-chain</span></div>
+  <div class="card">Secure<br><span>Smart Contracts</span></div>
+  <div class="card">ETH<br><span>Payments</span></div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+
+  <!-- FORM -->
+  <div class="form-box">
+    <h2>Add Subscription</h2>
+
+    <input id="service" placeholder="Service Name">
+    <input id="duration" placeholder="Duration">
+    <input id="amount" placeholder="ETH Amount">
+
+    <button onclick="addSubscription()">Add Subscription</button>
+  </div>
+
+  <!-- INFO -->
+  <div class="info-box">
+    <h2>How it works</h2>
+    <p>✔ Pay subscription via smart contract</p>
+    <p>✔ Track expiry & spending</p>
+    <p>✔ Cancel anytime</p>
+  </div>
+
+  <!-- SUBSCRIPTIONS -->
+  <div class="subs-box">
+    <h2>Your Subscriptions</h2>
+    <div id="list"></div>
+  </div>
+
+</div>
+
+<!-- Ethers v5 -->
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
